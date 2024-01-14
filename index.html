@@ -276,5 +276,23 @@
 <script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('65a21fab01a50f722f87aff9', 'standard', {'width':'100vw','height':'600px'});"></script>
     </div>
     <script src="Test3.js"></script>
+
+    <script>
+        function showNotification() {
+            // Check if the browser supports notifications
+            if ('Notification' in window) {
+                Notification.requestPermission().then(function (permission) {
+                    if (permission === 'granted') {
+                        // Create a notification
+                        var notification = new Notification('Your Website', {
+                            body: 'This is a sample notification.'
+                        });
+                    }
+                });
+            }
+        }
+    </script>
+
+
 </body>
 </html>
