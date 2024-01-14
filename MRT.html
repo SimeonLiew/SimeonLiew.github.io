@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width,initial-scale-1.0" />
+    <link rel="stylesheet" href="Test3.css">
+    <link rel="stylesheet" href="transportion.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ca89ba1ad6.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+
+    <header>
+        <div class="header-nav">
+            <a href="#" class="logo"><span>EXPRESS</span>TIME</a>
+            <nav class="navbar">
+                <a href="Test3.php">HOME</a>
+                <a href="#home">LATEST NEWS</a>
+                <a href="#transport">BUS</a>
+                <a href="#transport">TRAIN</a>
+            </nav>
+            <div class="icon">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+                <i class="fa-solid fa-user-secret" id="admin-login-btn"></i>
+            </div>
+
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here..." />
+            <label for="search-bar"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <div class="card">
+            <div class="card-front">
+                <i class="fa-solid fa-xmark" id="form-close"></i>
+                <form action="login.php" method="POST">
+                    <h3>Login</h3>
+                    <input type="email" class="box" placeholder="Enter your email" />
+                    <input type="password" class="box" placeholder="Enter your password" />
+                    <input type="submit" class="submit-btn" value="Login now" />
+                    <input type="checkbox" id="remember" /><span>Remember Me</span>
+                    <p>Forget password?  <a href="#">Click here</a></p>
+
+                </form>
+                <p>I'm New Here.  <a href="#" onclick="openRegister()">Click here</a></p>
+            </div>
+            <div class="card-back">
+                <i class="fa-solid fa-xmark" id="form-close"></i>
+                <form action="">
+                    <h3>Register</h3>
+                    <input type="text" class="box" placeholder="ID Name" />
+                    <input type="email" class="box" placeholder="Enter your email" />
+                    <input type="password" class="box" placeholder="Enter your password" />
+                    <input type="submit" class="register-btn" value="Register now" />
+
+                </form>
+                <p>I've An Account.  <a href="#" onclick="openLogin()">Click here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="MRT_Menu">
+        <div class="img_Monorail">
+            <img src="Line_MRT_Kajang_Map.png" />
+        </div>
+        <div class="table-show">
+            <div class="table-show-content">
+                <img src="MRT Kajang.png" class="img-thumbnail" />
+                <h4>MRT Kajang</h4>
+                <ul>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kwasa Damansara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kwasa Sentral</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kota Damansara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Suria</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Mutiara Damansara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Bandar Utama</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Tun Dr Ismail</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Phileo Damansara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Pusat Bandar Damasara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Semantan</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Muzium Negara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Pasar Seni</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Merdeka</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Bukit Bintang</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Tun Razak Exchange</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Cochrane</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Maluri</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Pertama</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Midah</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Mutiara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Connaught</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Suntex</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sri Raya</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Bandar Tun Hussein Onn</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Batu 11 Cheras</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Bukit Dukung</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sungai Jernih</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Stadium Kajang</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kajang</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="MRT_Menu">
+        <div class="img_Monorail">
+            <img src="Line_MRT_Putrajaya_Map.jpg" />
+        </div>
+        <div class="table-show">
+            <div class="table-show-content">
+                <img src="MRT Putrajaya.png" class="img-thumbnail" />
+                <h4>MRT Putrajaya</h4>
+                <ul>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kwasa Damansara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kampung Selamat</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">MRT Sungai Buloh</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Damansara Damai</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sri Damansara Barat</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sri Damansara Sentral</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sri Damansara Timur</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Metro Prima</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kepong Baru</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Jinjang</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sri Delima</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kampung Baru</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kentonmen</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Jalan Ipoh</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sentral Barat</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Titiwangsa</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Hospital Kuala Lumpur</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Raja Uda</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Ampang Park</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Persiaran KLCC</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Conlay</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Tun Razak Exchange (TRX)</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Chan Sow Lin</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Bandar Malaysia Utara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Bandar Malaysia Selatan</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Kuchai</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Naga Emas</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Sungai Besi</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Serdang Raya Utara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Serdang Raya Selatan</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Serdang Jaya</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">UPM</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Taman Equine</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">16 Sierra</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Cyberjaya Utara</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Cyberjaya City Centre</a></li>
+                    <li><a href="MRT_Bus.html" class="table-cell">Putrajaya Sentral</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-nav" id="transport">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#train">Train</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bus">Bus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#service">Service</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="train">
+                <ul class="transport-links">
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="MRT.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="MRT.html" class="btn btn-primary"><h4>MRT</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="LRT.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="LRT.html" class="btn btn-primary"><h4>LRT</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="KTM.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="KTM.html" class="btn btn-primary"><h4>KTM</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="Monorail.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="MONORAIL.html" class="btn btn-primary"><h4>MONORAIL</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="transport-links">
+                    <li><a href="tstatus.php"><h4>TRAIN STATUS</h4></a></li>
+                    <?php
+                    $mysql = mysqli_connect("localhost", "root", "");
+                    mysqli_select_db($mysql, 'websitedb');
+
+                    // Check connection
+                    if (mysqli_connect_errno()) {
+                    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                    exit();
+                    }
+
+                    // SQL query to fetch train status data
+                    $sql = "SELECT * FROM train_status";
+                    $result = mysqli_query($mysql, $sql);
+                    ?>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="bus">
+                <ul class="transport-links">
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="MRT bus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="MRTK_Bus.php" class="btn btn-primary"><h4>MRT KAJANG FEEDER BUS</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="MRT bus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="MRTP_Bus.php" class="btn btn-primary"><h4>MRT PUTRAJAYA FEEDER BUS</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="RapidKL bus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="RAPIDKL_Bus.php" class="btn btn-primary"><h4>RAPIDKL BUS</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="GoKL bus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="GOKL_BUS.php" class="btn btn-primary"><h4>GOKL BUS</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card text-center" style="width: 14rem;">
+                            <img src="Smart Selangor bus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="SMARTSELANGOR_Bus.php" class="btn btn-primary"><h4>SMART SELANGOR BUS</h4></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="service">
+                <h4>Service</h4>
+                <p>This is the content for the Latest News tab.</p>
+            </div>
+        </div>
+    </div>
+    <script src="Test3.js"></script>
+</body>
+</html>
