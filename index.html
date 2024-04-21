@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasi Lemak &#10084</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="link rel= preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <img src="menu close.png" class="menuclose-icon"width="30px" height="30px" onclick="hideMenu()">
+                <ul id="MenuItems">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">NASI LEMAK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="menu.png" class="menu-icon"width="30px" height="30px" onclick="showMenu()">
+        </nav>
+<div class="text-box">
+    <h1>Craving for Nasi Lemak?</h1>
+    <p>This website is where you go when you are craving for nasi lemak.</p>
+</div>
+
+
+</section>
+
+<section class="about">
+    <h1>Why I made this website</h1>
+    <p>I made this website to share nasi lemak locations all over malaysia to fellow malaysians and other people who are just looking to try our national dish.</p>
+
+    <div class="row">
+        <div class="about-col">
+            <h3>What is Nasi Lemak?</h3>
+            <p>Nasi Lemak is Malaysia's National dish. Nasi lemak consists of fragrant rice cooked in coconut milk and pandan leaf.</p>
+        </div>
+        <div class="about-col">
+            <h3>Ingredients</h3>
+            <p>Traditionally, nasi lemak is wrapped and served in banana leaves, added with a hot spicy sauce (sambal) and various garnishes, including cucumber slices, small fried anchovies (ikan bilis), roasted peanuts, and hard-boiled or fried eggs.</p>
+        </div>
+        <div class="about-col">
+            <h3>Why Nasi Lemak?</h3>
+            <p>That is because Nasi Lemak is delicious.&#128523</p>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="recommended">
+    <div class="small-container">
+        <h2 class="title" align ="center">Recommended Nasi Lemak Spots</h2>
+        <div class="row">
+            <div class="col-3">
+                <a href="nasilemak1details.html">
+                <img src="nasilemak.jpg"></a>
+                <h4>Village Park Nasi Lemak</h4>
+                <p>Rating: 4&#11088;</p>
+                <p>Rm 8-RM 20+</p>
+              
+            </div>
+            <div class="col-3">
+                <a href="nasilemak2details.html">
+                <img src="nasilemak2.jpg"></a>
+                <h4>NU Sentral Nasi Lemak</h4>
+                <p>Rating: 2.7&#11088;</p>
+                <p>RM 6-RM 20+</p>
+                
+            </div>
+            <div class="col-3">
+                <a href="nasilemak3details.html">
+                <img src="nasilemak3.jpg"></a>
+                <h4>Jalan 222 Nasi Lemak</h4>
+               <p>Rating: 4&#11088;</p>
+                <p>RM 6-RM 9+</p>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- js for toggle menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</script>
+</body>
+</html>
