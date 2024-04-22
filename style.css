@@ -259,11 +259,11 @@ select:focus{
 .video-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .video-container iframe {
-    width: 100%; /* Adjust width as needed */
-    max-width: 800px; /* Adjust max-width as needed */
+    width: 100%; 
+    max-width: 800px; 
     height: 400px;
 }
